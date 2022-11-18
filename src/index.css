@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --clr-white: #FFFFFF;
   --clr-black: #202020;
@@ -39,10 +44,10 @@ nav {
   padding: 20px;
 }
 
-.nav__brand img {
+/* .nav__brand img {
   max-width: 125px;
   height: auto;
-}
+} */
 
 .nav__brand h1 {
   color: var(--clr-blue);
@@ -96,7 +101,7 @@ nav {
 
 /* ------------------------------------------------------ */
 /* -- HEADER -- */
-
+/* 
 header {
   background-image: url("./assets/houses.png");
   background-position: center;
@@ -137,7 +142,7 @@ header {
 
 .header__search:hover {
   outline: 1px solid var(--clr-blue);
-}
+} */
 
 /* ------------------------------------------------------ */
 /* -- CARDS -- */
@@ -182,9 +187,9 @@ header {
   z-index: -1;
 }
 
-.card__image img {
+/* .card__image img {
   max-width: 100%;
-}
+} */
 
 .card__info {
   width: 100%;
@@ -268,10 +273,10 @@ header {
   cursor: pointer;
 }
 
-.home__close img {
+/* .home__close img {
   width: 25px;
   height: 25px;
-}
+} */
 
 .home__overview {
   height: 100%;
